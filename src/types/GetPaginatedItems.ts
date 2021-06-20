@@ -3,7 +3,7 @@ import { Video, YTComment, Playlist, Subscription, VideoCategory, VideoAbuseRepo
 /**
  * @ignore
  */
-export type PaginatedItemsEndpoints = 'playlistItems' | 'playlists' | 'playlists:channel' | 'commentThreads' | 'commentThreads:video' | 'commentThreads:channel' |
+export type PaginatedItemsEndpoints = 'videos' | 'playlistItems' | 'playlists' | 'playlists:channel' | 'commentThreads' | 'commentThreads:video' | 'commentThreads:channel' |
   'comments' | 'subscriptions' | 'videoCategories' | 'videoAbuseReportReasons' | 'i18nLanguages' | 'i18nRegions' | 'channelSections' | 'captions'
 
 /**

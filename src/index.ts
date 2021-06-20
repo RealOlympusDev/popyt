@@ -162,9 +162,14 @@ export class YouTube {
     return GenericService.getItem(this, Video, false, id, parts) as Promise<Video>
   }
 
+  public async getVideos(id, parts?: VideoParts) {
+    return GenericService.getPaginatedItems(this, 'videos', false, id, 0, null, parts) as Promise<Video[]>
+  }
+
+
   /**
    * Get a [[Channel]] object from the Username, URL or ID of a channel.
-   * Meant mostly for getting by URL or ID.  
+   * Meant mostly for getting by URL or ID.
    * **Beware**, custom channel URLs may not work.
    * @param channelResolvable The Username, URL or ID of the channel.
    * @param parts The parts of the channel to fetch (saves quota if you aren't using certain properties!)
